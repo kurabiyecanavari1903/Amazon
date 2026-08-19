@@ -8,124 +8,135 @@
 
 <body>
     <!-- Header Section -->
-  <header class="bg-[#000000] py-[9px] text-white">
-  <!-- Header Class -->
-  <div class="flex items-center gap-6 flex-wrap px-2 lg:flex-nowrap max-[400px]:gap-2 max-[400px]:px-1">
+<header class="w-full bg-black py-3 text-white">
+  <div class="flex w-full items-center gap-6 px-2 max-[400px]:gap-2 max-[400px]:px-1 lg:flex-nowrap">
     <!-- Logo -->
-    <img src="/src/images/header logo.png" alt="Amazon" class="mx-5 w-26 max-[400px]:mx-1 max-[400px]:w-20">
-    <!-- Teslimat Konum Kısmı -->
-    <div class="flex items-center cursor-pointer max-[400px]:hidden">
-      <!-- Konum İkonu -->
-      <img src="/src/images/icons8-location-50.png" alt="Konum" class="w-5 translate-y-[6px] invert">
+    <img
+      src="/src/images/header logo.png"
+      alt="Amazon"
+      class="mx-5 w-26 max-[400px]:mx-1 max-[400px]:w-20">
+    <!-- Teslimat Konumu -->
+    <div class="flex shrink-0 cursor-pointer max-[400px]:hidden">
+      <img
+        src="/src/images/icons8-location-50.png"
+        alt="Konum"
+        class="min-w-0 h-5 translate-y-4 invert">
       <div>
-        <h1 class="whitespace-nowrap text-xs text-gray-300">Teslimat Konumu: Istanbul 34080</h1>
-        <h1 class="text-sm font-bold">Konumu Güncelle</h1>
+        <h1 class="whitespace-nowrap text-xs text-gray-300">
+          Teslimat Konumu: Istanbul 34080
+        </h1>
+        <h1 class="text-sm font-bold">
+          Konumu Güncelle
+        </h1>
       </div>
     </div>
     <!-- Arama Alanı -->
-    <div class="flex h-10 flex-1 min-w-0 lg:flex-none max-[400px]:w-full max-[400px]:order-3 max-[400px]:basis-full max-[400px]:h-9">
+    <div class="flex h-10 min-w-0 flex-1 max-[400px]:order-3 max-[400px]:basis-full">
       <!-- Tüm Kategoriler -->
-      <button type="button" class="flex items-center gap-2 rounded-l-basetext-base bg-gray-200 px-4 text-sm text-gray-700 hover:bg-gray-300 max-[400px]:px-2 max-[400px]:text-[10px]">
-        <span class="cursor-pointer">Tüm Kategoriler</span>
+      <button
+        type="button"
+        class="flex shrink-0 items-center gap-2 rounded-l-md bg-gray-200 px-4 text-sm text-gray-700 hover:bg-gray-300 max-[400px]:px-2 max-[400px]:text-[10px] cursor-pointer">
+        <span class="whitespace-nowrap">
+          Tüm Kategoriler
+        </span>
       </button>
-      <!-- Arama Input -->
-      <input type="text" placeholder="Amazon.com.tr araması yapın" class="w-[1550px] bg-white px-4 text-sm text-gray-800 outline-none flex-1 min-w-0 lg:flex-none max-[400px]:px-2 max-[400px]:text-[11px]">
+      <!-- Input -->
+      <input
+        type="text"
+        placeholder="Amazon.com.tr araması yapın"
+        class="min-w-0 flex-1 bg-white px-4 text-sm text-gray-800 outline-none max-[400px]:px-2 max-[400px]:text-[11px]">
       <!-- Arama Butonu -->
-      <button type="button" class="flex w-14 items-center justify-center rounded-r-md bg-[#febd69] hover:bg-[#f3a847] max-[400px]:w-10">
-        <img src="/src/images/icons8-search-50.png" alt="Search" class="w-6 max-[400px]:w-5"/>
+      <button
+        type="button"
+        class="flex w-14 shrink-0 items-center justify-center rounded-r-md bg-[#febd69] hover:bg-[#f3a847] max-[400px]:w-10 cursor-pointer">
+        <img
+          src="/src/images/icons8-search-50.png"
+          alt="Search"
+          class="w-6 max-[400px]:w-5">
       </button>
-      <!-- Hesap ve Listeler -->
-        <div class="ml-9 cursor-pointer whitespace-nowrap max-[400px]:hidden">
-         <p class="text-xs text-gray-300">Merhaba, Giriş yapın</p>
-         <p class="text-sm font-bold">Hesap ve Listeler</p>
-        </div>
-      <!-- Siparişler -->
-        <div class="cursor-pointer ml-14 whitespace-nowrap max-[400px]:hidden">
-         <p class="text-xs">İadeler</p>
-         <p class="text-sm font-bold">ve Siparişler</p>
-         </div>
-      <!-- Sepet -->
-        <div class="flex items-center cursor-pointer ml-10 whitespace-nowrap max-[400px]:ml-2">
-          <img src="/src/images/icons8-shopping-cart-50.png" alt="Sepet" class="invert w-9 mr-1 max-[400px]:w-7">
-          <div class="ml-1 max-[400px]:hidden">
-         <p class="text-xs">Alışveriş</p>
-         <p class="text-sm font-bold">Sepeti</p>
-        </div>
     </div>
+    <!-- Hesap ve Listeler -->
+    <div class="ml-3 shrink-0 cursor-pointer whitespace-nowrap max-[400px]:hidden">
+      <p class="text-xs text-gray-300">
+        Merhaba, Giriş yapın
+      </p>
+      <p class="text-sm font-bold">
+        Hesap ve Listeler
+      </p>
+    </div>
+    <!-- Siparişler -->
+    <div class="ml-3 shrink-0 cursor-pointer whitespace-nowrap max-[400px]:hidden">
+      <p class="text-xs">
+        İadeler
+      </p>
+      <p class="text-sm font-bold">
+        ve Siparişler
+      </p>
+    </div>
+    <!-- Sepet -->
+    <div class="ml-3 flex shrink-0 cursor-pointer items-center whitespace-nowrap max-[400px]:ml-2">
+      <img
+        src="/src/images/icons8-shopping-cart-50.png"
+        alt="Sepet"
+        class="mr-1 w-9 invert max-[400px]:w-7">
+      <div class="mr-4 max-[400px]:hidden">
+        <p class="text-xs">
+          Alışveriş
+        </p>
+        <p class="text-sm font-bold">
+          Sepeti
+        </p>
+      </div>
+    </div>
+
   </div>
-  </header>
+</header>
 
     <!-- Navbar Section -->
-  <nav class="bg-[#232f3e] text-white overflow-x-auto">
-    <!-- Navbar Container -->
-    <div class="container flex items-center justify-around gap-6 text-nowrap py-[10px] text-[14px] ml-5 min-w-max max-[400px]:gap-4 max-[400px]:ml-2 max-[400px]:py-2 max-[400px]:text-[12px]">
+  <nav class="bg-[#232f3e] text-white w-full">
+    <!-- Navbar Class -->
+    <div class="w-full flex items-center justify-between mb-0.5 text-[14px] px-4 max-[400px]:text-[12px]">
+      <!-- Menü Elemanları Kapsayıcısı -->
+       <div class="flex items-center gap-6 text-nowrap max-[400px]:gap-4">
       <!-- Tümü -->
       <div class="cursor-pointer font-bold">
         ☰ Tümü
       </div>
       <!-- Menü Elemanları -->
-      <div class="cursor-pointer">
+      <div class="cursor-pointer font-semibold">
         Günlük İhtiyaçlar
       </div>
-      <div class="cursor-pointer">
+      <div class="cursor-pointer font-semibold">
         Satış Yap
       </div>
-      <div class="cursor-pointer">
+      <div class="cursor-pointer font-semibold">
         Çok Satanlar
       </div>
-      <div class="cursor-pointer">
+      <div class="cursor-pointer font-semibold">
         Günün Fırsatları
       </div>
-      <div class="cursor-pointer">
+      <div class="cursor-pointer font-semibold">
         Yeni Çıkanlar
       </div>
-      <div class="cursor-pointer">
+      <div class="cursor-pointer font-semibold">
         Kişisel Bakım ve Kozmetik 
       </div>
-      <div class="cursor-pointer">
+      <div class="cursor-pointer font-semibold">
         Prime
       </div>
-      <div class="cursor-pointer">
+      <div class="cursor-pointer font-semibold">
         Kitap
       </div>
-      <div class="cursor-pointer">
+      <div class="cursor-pointer font-semibold">
         Moda
       </div>
-      <div class="cursor-pointer">
+      <div class="cursor-pointer font-semibold">
         Elektronik
       </div>
-      <div class="cursor-pointer">
-        Oyuncaklar ve Oyunlar
       </div>
+      <!-- Resim Kapsayıcısı -->
       <div class="cursor-pointer">
-        Yapı Market
-      </div>
-      <div class="cursor-pointer">
-        Spor ve Açık Hava Aktiviteleri
-      </div>
-      <div class="cursor-pointer">
-        Video Oyunu ve Konsol
-      </div>
-      <div class="cursor-pointer">
-        Ev ve Yaşam
-      </div>
-      <div class="cursor-pointer">
-        Bebek
-      </div>
-      <div class="cursor-pointer">
-        Bilgisayar
-      </div>
-      <div class="cursor-pointer">
-        Amazon Ayrıcalıkları
-      </div>
-      <div class="cursor-pointer">
-        Sağlık ve Bakım
-      </div>
-      <div class="cursor-pointer">
-        Evcil Hayvan
-      </div>
-      <div class="cursor-pointer">
-        Hediye Kartları
+        <img src="/src/images/casiomarkahaftasinavbar.png" alt="" class="">
       </div>
     </div>
   </nav>
@@ -133,13 +144,13 @@
     <!-- Main Section -->
  <main class="bg-gray-200">
   <!-- Main Kısım -->
-  <div class="mx-auto w-[63%] bg-white cursor-pointer pt-2 w-full lg:w-[63%] max-[400px]:w-full">
+  <div class="mx-auto w-full bg-white cursor-pointer pt-2 max-[400px]:w-full">
     <div class="w-full px-2 max-[400px]:px-1">
       <!-- Üst Coverlar -->
       <section>
-        <div class="grid grid-cols-5 gap-2 grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 max-[400px]:grid-cols-1 max-[400px]:gap-1">
+        <div class="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-5 max-[400px]:grid-cols-1 max-[400px]:gap-1">
           <!-- Cover 1 -->
-          <div class="h-[500px] overflow-hidden rounded-lg h-[300px] sm:h-[400px] lg:h-[500px] max-[400px]:h-[260px]">
+          <div class="h-[300px] overflow-hidden rounded-lg h-[300px] sm:h-[400px] lg:h-[500px] max-[400px]:h-[260px]">
             <img
               src="./images/primeday.png"
               alt="Prime Day"
